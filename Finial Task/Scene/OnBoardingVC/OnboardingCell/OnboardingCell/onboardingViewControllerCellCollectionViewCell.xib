@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="onboardingViewControllerCellCollectionViewCell" customModule="Finial_Task_last_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="295"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="295"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-LE-V85">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="295"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-EO-Fhk">
+                                <rect key="frame" x="0.0" y="0.0" width="431" height="295"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iG1-EO-Fhk" secondAttribute="trailing" id="0Rq-g1-ali"/>
+                            <constraint firstAttribute="trailing" secondItem="iG1-EO-Fhk" secondAttribute="trailing" id="Pza-qR-4oh"/>
+                            <constraint firstAttribute="bottom" secondItem="iG1-EO-Fhk" secondAttribute="bottom" id="Qcg-MH-T1L"/>
+                            <constraint firstItem="iG1-EO-Fhk" firstAttribute="leading" secondItem="3OF-LE-V85" secondAttribute="leading" id="Wys-Pv-Ujy"/>
+                            <constraint firstItem="iG1-EO-Fhk" firstAttribute="top" secondItem="3OF-LE-V85" secondAttribute="top" id="bUa-GO-Rgw"/>
+                            <constraint firstItem="iG1-EO-Fhk" firstAttribute="top" secondItem="3OF-LE-V85" secondAttribute="top" id="eXz-pe-OP4"/>
+                            <constraint firstAttribute="bottom" secondItem="iG1-EO-Fhk" secondAttribute="bottom" id="nCn-U1-KS5"/>
+                            <constraint firstItem="iG1-EO-Fhk" firstAttribute="leading" secondItem="3OF-LE-V85" secondAttribute="leading" id="zY6-9k-f2p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3OF-LE-V85" secondAttribute="bottom" id="T08-Y2-cWm"/>
+                <constraint firstItem="3OF-LE-V85" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c3N-Vk-8vB"/>
+                <constraint firstItem="3OF-LE-V85" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vtS-u1-Uev"/>
+                <constraint firstAttribute="trailing" secondItem="3OF-LE-V85" secondAttribute="trailing" id="wf2-fV-e5o"/>
+            </constraints>
+            <size key="customSize" width="431" height="295"/>
+            <connections>
+                <outlet property="imageCollectionViewCell" destination="iG1-EO-Fhk" id="OMg-RO-7n3"/>
+            </connections>
+            <point key="canvasLocation" x="503.05343511450377" y="29.929577464788736"/>
+        </collectionViewCell>
+    </objects>
+</document>

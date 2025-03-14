@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  Finial Task
+
+  Created by Sara Syam on 25/11/2024.
+  
+*/
+
+// Login & Register & Onboarding
+"English" = "انجليزي";
+"Welcome Back" = "مرحبا بك مجددا";
+"Enjoy your favorite movies" = "استمتع بفلمك المفضل";
+"Login" = "تسجيل الدخول";
+"Register" = "سجل حسابك";
+"By sign in or sign up, you agree to our Terms of Service and Privacy Policy" = "بتسجيل الدخول او تسجيل حسابك ، انت توافق علي شروطنا و احكامنا و سياسه خصوصيتنا ";
+"Choose language" = "اختار لغه";
+"Arabic" = "عربي";
+"Arabic_button" = "عربي";
+"Confirm" = "تأكيد";
+"Email" = "حسابك الالكتروني";
+"Password" = "الرقم السري";
+"or continue with" = "او استمر باستخدام";
+"Apple" = "ابل";
+"Google" = "جوجل";
+"Your Name" = "اسمك";
+"Gender" = "نوعك";
+"Country" = "بلدك";
+"Confirm Password" = "تأكيد الرقم السري";
+
+// Tab Bar
+"Home" = "الرئيسية";
+"Movie" = "الأفلام";
+"Ticket" = "التذاكر";
+"Profile" = "الملف الشخصي";
+
+// Home Screen
+"Hi" = "مرحباً, ";
+"welcome label" = "مرحباً مرة أخرى";
+"search" = "البحث";
+
+// Search Screen
+"search title" = "البحث";
+"search placeholder" = "ابحث عن الأفلام حسب العنوان أو النوع";
+
+// Movie Details Screen
+"media type" = "نوع الوسائط";
+"censorship" = "التصنيف العمري";
+"language" = "اللغة";
+"storyline" = "القصة";
+"genres" = "التصنيفات";
+"Book Ticket" = "احجز تذكرتك";
+"see More" = "عرض المزيد";
+"see less" = "عرض اقل";
+"Are you sure you want to add \(movieDetails?.title ?? Movie) to your ticket?" = "هل انت متأكد انك تريد اضافه\(movieDetails?.title ?? فلم) الي التكت";
+"movie already added" = "الفلم تمت اضافته من قبل";
+"warning" = "تحذير";
+"Yes" = "نعم";
+"Cancel" = "الغاء";
+"success" = "نجاح"; // Arabic for "Success"
+"movie added" = "تم اضافة الفيلم"; // Arabic for "Movie added"
+"error" = "خطأ"; // Arabic for "Error"
+"failed to add" = "فشل في الاضافة"; // Arabic for "Failed to add"
+"Ok" = "موافق"; // Arabic for "OK"
+"Are you sure you want to add %@ to your ticket?" = "%@ هل أنت متأكد أنك تريد إضافة إلى تذكرتك؟"; // Arabic for confirmation message with placeholder for movie title
+"Yes" = "نعم"; // Arabic for "Yes"
+"Cancel" = "إلغاء"; // Arabic for "Cancel"
+"warning" = "تحذير"; // Arabic for "Warning"
+"movie already added" = "الفيلم موجود بالفعل"; // Arabic for "Movie already added"
+"see More" = "عرض المزيد"; // Arabic for "See More"
+"see Less" = "عرض أقل"; // Arabic for "See Less"
+
+// Tickets Screen
+"my tickets" = "تذاكري";
+"delete" = "حذف";
+"delete ticket" = "حذف التذكرة";
+"delete confirm" = "هل أنت متأكد من حذف هذه التذكرة؟";
+"ticket deleted" = "تم حذف التذكرة بنجاح";
+"failed to delete" = "فشل في حذف التذكرة";
+
+
+// Profile Screen
+"home" = "منزل";
+"My Ticket" = "تذاكري";
+"change Language" = "تغيير اللغه";
+"logout" = "سجل الخروج";
+"logout message" = "هل انت متأكد انك تريد تسجيل الخروج?";
+"edit profile" = "تعديل الملف!";
+"profile" = "ملف";
+"gender" = "نوعك";
+
+// Movie Screen
+"nowPlaying" = "يعرض الآن";
+"comingSoon" = "قريباً";
+"add To Tickets" = "إضافة إلى التذاكر";
+"storyline" = "القصة";
+"media Type" = "نوع الوسائط";
+"censorship" = "التصنيف العمري";
+"language" = "اللغة";
+"genres" = "التصنيفات";
+"book Ticket" = "حجز تذكرة";
+
+// Language Selection
+"Choose language" = "اختر اللغة";
+"select language" = "اختر اللغة";
+"language changed" = "تم تغيير اللغة بنجاح";
+"English" = "الإنجليزية";
+"Arabic" = "العربية";
+"choose language title" = "اختر اللغة";
+"english language" = "الإنجليزية";
+"arabic language" = "العربية";
+"confirm language" = "تأكيد";
+
+// Profile Screen
+"Home" = "الرئيسية";
+"My Ticket" = "تذاكري";
+"Change language" = "تغيير اللغة";
+"Logout" = "تسجيل الخروج";
+"logout message" = "هل أنت متأكد من تسجيل الخروج؟";
+"edit profile" = "تعديل الملف الشخصي";
+"profile" = "الملف الشخصي";
+"gender" = "الجنس";
+
+
+// Logout Screen
+"logout title" = "تسجيل الخروج";
+"logout message" = "..هل أنت متأكد؟ أنك تريد تسجيل الخروج";
+"logout button" = "تسجيل الخروج";
+"cancel button" = "إلغاء";

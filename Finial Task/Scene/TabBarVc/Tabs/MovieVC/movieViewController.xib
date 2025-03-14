@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="movieViewController" customModule="FinialTask" customModuleProvider="target">
+            <connections>
+                <outlet property="indicator" destination="cSd-xE-BHP" id="l0v-Hc-sJa"/>
+                <outlet property="movieCollectionView" destination="j3w-0l-0K4" id="dNM-9E-Obo"/>
+                <outlet property="movieSegmantedControl" destination="pvA-h6-3sc" id="O0w-D9-dn5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pvA-h6-3sc">
+                    <rect key="frame" x="16" y="59" width="361" height="51"/>
+                    <color key="backgroundColor" red="0.109803915" green="0.109803915" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AQS-rU-cF5"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Now Playing"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="mainColor"/>
+                </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-0l-0K4">
+                    <rect key="frame" x="16" y="125" width="361" height="693"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KdY-s5-viT">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-xE-BHP" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="146.66666666666666" y="388.66666666666669" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="IFL-41-rHY"/>
+                        <constraint firstAttribute="width" constant="100" id="XUo-PA-qkh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cSd-xE-BHP" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="8Bf-iP-fTE"/>
+                <constraint firstItem="j3w-0l-0K4" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BiR-36-Iuv"/>
+                <constraint firstItem="j3w-0l-0K4" firstAttribute="top" secondItem="pvA-h6-3sc" secondAttribute="bottom" constant="16" id="FHt-io-kPA"/>
+                <constraint firstItem="pvA-h6-3sc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FxD-dj-lD1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j3w-0l-0K4" secondAttribute="trailing" constant="16" id="HQH-tE-LsP"/>
+                <constraint firstItem="j3w-0l-0K4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JZs-Gm-Ibu"/>
+                <constraint firstItem="cSd-xE-BHP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Kvs-Lg-nOu"/>
+                <constraint firstItem="pvA-h6-3sc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QZC-3K-oOZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pvA-h6-3sc" secondAttribute="trailing" constant="16" id="c9N-R1-Nxs"/>
+            </constraints>
+            <point key="canvasLocation" x="19.083969465648853" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainColor">
+            <color red="0.9570000171661377" green="0.77600002288818359" blue="0.32499998807907104" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -50,4 +50,4 @@ Movie Night allows users to explore trending, popular, and top-rated movies with
 
 ![MovieRecord](https://github.com/user-attachments/assets/f1aee599-b67d-4101-aee1-edc6956a569c)
 
-| ![Home](ScreenShot/HomeScreen.PNG) | ![Details](ScreenShot/Details.PNG) | ![Entry](ScreenShot/EntryScreen.PNG)
+| ![Home](https://github.com/SaraSyam/MovieNight/blob/a0cd1695cdd5e76d8c51d59cba5c525a4158b93f/Finial%20Task/ScreenShot/HomeScreen.PNG) | ![Details](ScreenShot/Details.PNG) | ![Entry](ScreenShot/EntryScreen.PNG)

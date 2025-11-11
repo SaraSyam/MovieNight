@@ -32,6 +32,8 @@ class translationViewController: UIViewController {
         let systemLanguage = Locale.current.language.languageCode?.identifier
         isArabicSelected = systemLanguage == "ar"
         updateLanguage(language: systemLanguage!)
+        presentationController?.delegate = self
+        
     }
     
     
@@ -91,7 +93,13 @@ class translationViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("languageChanged"), object: nil, userInfo: ["language": language])
     }
 }
+
 extension Notification.Name {
     static let translationViewControllerDismissed = Notification.Name("translationViewControllerDismissed")
 }
 
+extension translationViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        NotificationCenter.default.post(name: .translationViewControllerDismissed, object: nil)
+    }
+}

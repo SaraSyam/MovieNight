@@ -86,6 +86,7 @@ class homeViewController: UIViewController , UICollectionViewDelegate, UICollect
             }
         }
     }
+    
     func updateUIForLanguage() {
       // Update labels, buttons, and other UI elements using localized strings from LocalizationManager
      // title = LocalizationManager.shared.localizedString("Home") // Example
@@ -97,11 +98,13 @@ class homeViewController: UIViewController , UICollectionViewDelegate, UICollect
         let searchVC = searchViewController() // Assuming you have a searchViewController class
         navigationController?.pushViewController(searchVC, animated: true)
     }
+    
     @objc func languageChanged(_ notification: Notification) {
         if let language = notification.userInfo?["language"] as? String {
             updateLanguage(language: language)
         }
     }
+    
     func updateLanguage(language: String) {
         guard let path = Bundle.main.path(forResource: language, ofType: "lproj") else {
             print("Error: Could not find language resource for \(language)")

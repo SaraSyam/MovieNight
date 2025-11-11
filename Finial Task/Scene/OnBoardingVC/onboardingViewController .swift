@@ -116,6 +116,7 @@ class onboardingViewController: UIViewController ,UICollectionViewDelegate ,UICo
         // Add dismissal observer
         NotificationCenter.default.addObserver(self, selector: #selector(removeBlurAndDismiss(_:)), name: .translationViewControllerDismissed, object: nil)
     }
+    
     @objc func removeBlurAndDismiss(_ notification: Notification) {
         UIView.animate(withDuration: 0.3) {
             self.blurView?.alpha = 0 // Fade out the blur
@@ -125,15 +126,18 @@ class onboardingViewController: UIViewController ,UICollectionViewDelegate ,UICo
             self.dismiss(animated: true, completion: nil)
         }
     }
+    
     func removeBlurView() {
         if let blurView = blurView {
             blurView.removeFromSuperview()
             self.blurView = nil // Clear reference
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArray.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "onboardingViewControllerCellCollectionViewCell", for: indexPath)as! onboardingViewControllerCellCollectionViewCell
         let image = imageArray[indexPath.row]
@@ -142,17 +146,21 @@ class onboardingViewController: UIViewController ,UICollectionViewDelegate ,UICo
 
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
         let height = collectionView.frame.height
         return CGSize(width: width, height: height)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
     }
+    
     @objc func updateImage() {
         if currentIndex < imageArray.count - 1 {
             currentIndex += 1
@@ -162,6 +170,7 @@ class onboardingViewController: UIViewController ,UICollectionViewDelegate ,UICo
             movieCollectionView.scrollToItem(at: IndexPath(item: currentIndex, section: 0), at: .centeredHorizontally, animated:true)
         pageControllerForMovieCollectionView.currentPage = currentIndex
         }
+    
     @objc func languageChanged(_ notification: Notification) {
         if let language = notification.userInfo?["language"] as? String {
             updateLanguage(language: language)

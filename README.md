@@ -45,7 +45,16 @@ Movie Night allows users to explore trending, popular, and top-rated movies with
    ```bash
    git clone https://github.com/SaraSyam/MovieNight.git
 ,
-   | Home Screen | Details Screen |
+   | Entry Screen | Login Screen |  SignUp Screen | Home Screen | Details Screen | Ticket Screen | Profile Screen |
+
+
+
 |--------------|----------------|
 
 ![MovieRecord](https://github.com/user-attachments/assets/f1aee599-b67d-4101-aee1-edc6956a569c)
+![EntryScreen](https://github.com/SaraSyam/MovieNight/blob/a7da97eaa1e87246b0668bebc73a61baa0503d6b/Finial%20Task/ScreenShot/EntryScreen.PNG)
+![HomeScreen](https://github.com/SaraSyam/MovieNight/blob/a7da97eaa1e87246b0668bebc73a61baa0503d6b/Finial%20Task/ScreenShot/HomeScreen.PNG)
+![DetailsScreen](https://github.com/SaraSyam/MovieNight/blob/a7da97eaa1e87246b0668bebc73a61baa0503d6b/Finial%20Task/ScreenShot/Details.PNG)
+![TicketScreen](https://github.com/SaraSyam/MovieNight/blob/a7da97eaa1e87246b0668bebc73a61baa0503d6b/Finial%20Task/ScreenShot/TicketScreen.PNG)
+![ProfileScreen](https://github.com/SaraSyam/MovieNight/blob/a7da97eaa1e87246b0668bebc73a61baa0503d6b/Finial%20Task/ScreenShot/ProfileScreen.PNG)
+
